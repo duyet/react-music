@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-core": "^6.4.5",
@@ -43,6 +45,8 @@
     "webpack": "^1.12.13",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0",
-    "whatwg-fetch": "^1.0.0"
-  }
+    "whatwg-fetch": "^1.0.0",
+    "snyk": "^1.317.0"
+  },
+  "snyk": true
 }
